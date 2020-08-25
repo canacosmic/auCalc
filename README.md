@@ -1,2 +1,2 @@
 # auCalc
-Simple but effective Karat Coneversion Calculator. Made for jewelers/goldsmiths.
+Simple but effective gold Karat Coneversion Calculator. Made for jewelers/goldsmiths.
