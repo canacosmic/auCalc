@@ -1,24 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mwq-KW-3cr">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="2AX-aL-Jkd">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="mwq-KW-3cr" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ctN-ra-cDZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="st4-aK-FZB" userLabel="Title Stack View">
+                                <rect key="frame" x="51" y="64.000000000000014" width="312" height="142.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Au.Calc" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOF-Su-54C">
+                                        <rect key="frame" x="0.0" y="0.0" width="312" height="109.33333333333333"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="80"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Karat Conversion Calculator." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGu-PO-Gwb">
+                                        <rect key="frame" x="0.0" y="109.33333333333334" width="312" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZnU-oc-y3a" userLabel="Input Stack View">
+                                <rect key="frame" x="69.333333333333343" y="341" width="275.66666666666663" height="214"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight of Current Gold:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rff-2F-gGy">
+                                        <rect key="frame" x="0.0" y="0.0" width="275.66666666666669" height="34.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="gr." textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5d5-Qn-Xsd">
+                                        <rect key="frame" x="0.0" y="34.333333333333314" width="275.66666666666669" height="37"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Karat of Current Gold:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASN-qG-KKN">
+                                        <rect key="frame" x="0.0" y="71.333333333333314" width="275.66666666666669" height="34.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="K." textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TIp-dd-XxT">
+                                        <rect key="frame" x="0.0" y="105.66666666666669" width="275.66666666666669" height="37"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desired Karat:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNe-hF-qFR">
+                                        <rect key="frame" x="0.0" y="142.66666666666669" width="275.66666666666669" height="34.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="K." textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="sTI-PG-35Y">
+                                        <rect key="frame" x="0.0" y="177" width="275.66666666666669" height="37"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tI8-0O-IEj">
+                                <rect key="frame" x="115" y="720" width="184" height="67"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="40"/>
+                                <state key="normal" title="Calculate!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateButton:" destination="mwq-KW-3cr" eventType="touchUpInside" id="XZs-cv-pHL"/>
+                                    <action selector="calculateButtonAction:" destination="mwq-KW-3cr" eventType="touchUpInside" id="Xpa-IS-0hM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstItem="ZnU-oc-y3a" firstAttribute="centerX" secondItem="ctN-ra-cDZ" secondAttribute="centerX" id="TNt-my-dNS"/>
+                            <constraint firstItem="st4-aK-FZB" firstAttribute="centerX" secondItem="ctN-ra-cDZ" secondAttribute="centerX" id="XAo-1f-WwI"/>
+                            <constraint firstItem="tI8-0O-IEj" firstAttribute="centerX" secondItem="ctN-ra-cDZ" secondAttribute="centerX" id="o4N-6Z-eG2"/>
+                            <constraint firstItem="Nqs-Gn-l2s" firstAttribute="bottom" secondItem="tI8-0O-IEj" secondAttribute="bottom" constant="75" id="peH-c8-jMb"/>
+                            <constraint firstItem="ZnU-oc-y3a" firstAttribute="centerY" secondItem="ctN-ra-cDZ" secondAttribute="centerY" id="u3p-hD-PmT"/>
+                            <constraint firstItem="st4-aK-FZB" firstAttribute="top" secondItem="Nqs-Gn-l2s" secondAttribute="top" constant="20" id="xsR-aO-dbY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nqs-Gn-l2s"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonCalc" destination="tI8-0O-IEj" id="aJs-QS-doh"/>
+                        <outlet property="calculateButton" destination="tI8-0O-IEj" id="Tk8-h9-QPs"/>
+                        <outlet property="currentTextField" destination="TIp-dd-XxT" id="UpU-P0-Xmp"/>
+                        <outlet property="desiredTextField" destination="sTI-PG-35Y" id="Fbg-2e-WKV"/>
+                        <outlet property="grTextField" destination="5d5-Qn-Xsd" id="Yt9-dv-LHu"/>
+                        <segue destination="RZS-hF-c8P" kind="show" identifier="segue" id="uXM-VV-eo9"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zhN-5K-fsH" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139" y="93"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="IvV-qj-eIJ">
+            <objects>
+                <viewController id="RZS-hF-c8P" customClass="ResultViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0aC-Aw-x6D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You need  to add:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9U-fX-xi6">
+                                <rect key="frame" x="95" y="75" width="224" height="134"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="49"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hfs-WV-Tzz" userLabel="Result Stack View">
+                                <rect key="frame" x="138" y="372" width="138" height="98"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efG-te-AqP">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="50"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="70"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Of Alloy." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnX-vT-6Lh">
+                                        <rect key="frame" x="0.0" y="50" width="138" height="48"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K L A U S T E N" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCg-ha-gVm">
+                                <rect key="frame" x="134.66666666666669" y="782" width="144.66666666666669" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                        <constraints>
+                            <constraint firstItem="hfs-WV-Tzz" firstAttribute="centerX" secondItem="0aC-Aw-x6D" secondAttribute="centerX" id="RwO-96-5Pq"/>
+                            <constraint firstItem="yCg-ha-gVm" firstAttribute="centerX" secondItem="0aC-Aw-x6D" secondAttribute="centerX" id="ZzA-jW-Qu2"/>
+                            <constraint firstItem="hfs-WV-Tzz" firstAttribute="centerY" secondItem="0aC-Aw-x6D" secondAttribute="centerY" id="i08-Je-NQY"/>
+                            <constraint firstItem="E9U-fX-xi6" firstAttribute="centerX" secondItem="0aC-Aw-x6D" secondAttribute="centerX" id="nrl-qx-Lea"/>
+                            <constraint firstItem="E9U-fX-xi6" firstAttribute="top" secondItem="VOX-0t-wpo" secondAttribute="top" constant="75" id="oqo-YP-rwa"/>
+                            <constraint firstItem="VOX-0t-wpo" firstAttribute="bottom" secondItem="yCg-ha-gVm" secondAttribute="bottom" id="zbf-q1-1OX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VOX-0t-wpo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wFR-5A-HGh"/>
+                    <connections>
+                        <outlet property="grLabel" destination="efG-te-AqP" id="oC0-xf-DII"/>
+                        <outlet property="metalLabel" destination="hnX-vT-6Lh" id="EBq-VR-hMt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Yw-Nd-S26" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888" y="92"/>
         </scene>
     </scenes>
 </document>
